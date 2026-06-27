@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One+ sense 2026 | ふれる 特設サイト</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .fade-section { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-section.visible { opacity: 1; transform: translateY(0); }
+        .hero-h { height: calc(92 * min(var(--vh, 1vh), 1vh)); }
+        .gallery-tab { color: #57534e; background-color: #f3f1ed; }
+        .gallery-tab.active { color: #292524; background-color: #e7e5e0; border-bottom: 3px solid #292524 !important; border-color: #292524 !important; }
+        .gallery-tab:not(.active):hover { background-color: #ede9e4; }
+        .gallery-content.hidden { display: none; }
+        body {
+        font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+        letter-spacing: 0.02em; /* 文字の間隔を少しだけ開けると上品になります */
+        line-height: 1.8;      /* 行間を少し広げると「ふれる」の文章がより読みやすくなります */}
+        .transition-all { transition: all 0.3s ease; }
+        .hover:-translate-y-1:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="w-full bg-stone-50 text-stone-800" style="background: rgb(250, 249, 247);">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-stone-200">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-center gap-1 overflow-x-auto text-sm relative">
+            <span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-stone-500 whitespace-nowrap">最終更新日：2026/06/27</span>
+            <a href="#about" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">One+ senseとは？</a>
+            <a href="#overview" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">開催概要</a>
+            <a href="#special" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">特別企画</a>
+            <a href="#recruit" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">出店者募集</a>
+            <a href="#past" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">過去展示</a>
+            <a href="#faq" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">FAQ</a>
+            <a href="#access" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">アクセス</a>
+            <a href="#sns" class="px-3 py-1 rounded-full hover:bg-stone-100 whitespace-nowrap">SNS</a>
+        </div>
+    </nav>
+
+    <header class="hero-h relative flex items-center justify-center overflow-hidden">
+        <img class="absolute inset-0 w-full h-full object-cover" src="images/hero-bg.png" alt="メインビジュアル">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 text-center text-white px-6">
+            <p class="text-sm tracking-widest mb-4 opacity-90">香りで世界観を表現する</p>
+            <h1 class="text-4xl md:text-6xl font-light tracking-wide mb-6">One+ sense 2026</h1>
+            <p class="text-2xl md:text-3xl font-light mb-10">ふれる</p>
+            <div class="inline-block bg-white/15 backdrop-blur rounded-2xl px-8 py-5 border border-white/20">
+                <p class="text-lg mb-1">2026.8.13 Thu – 16 Sun</p>
+                <p class="text-sm opacity-80">安田侃彫刻美術館 アルテピアッツァ美唄 ストゥディオアルテ</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-20 space-y-24">
+       <section id="about" class="fade-section max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-medium mb-12 text-center">One+ sense とは?</h2>
+    
+    <div class="leading-loose text-stone-600 text-center space-y-8">
+        <p>One+ senseは、B-tria Spica（ビートリアスピカ）が2022年より毎年開催している、<br>香りをテーマにした体験型展示イベントです。</p>
+        <p>人が香りを感じるのは五感のひとつである「嗅覚<b>[One sense]</b>」ですが、<br>香りは嗅覚だけで感じるものではありません。</p>
+        <p>視覚、聴覚、触覚、味覚、そして人の記憶や感情。<br>
+        さまざまな感覚[<b>＋</b>]を組み合わせることで、香りの新しい表現や体験ができるのではないか。<br>
+        そんな想いから、「One+ sense」という名前を付けました。</p>
+        <p>「都会へ行かなくても、香りにふれられる場を。」<br>その想いを原点に、地元・美唄市で展示を続けています。</p>
+        <p>会場となるアルテピアッツァ美唄は、幼い頃から親しんできた場所であり、<br>創作活動の原点でもあります。</p>
+        
+        <!-- 「ふれる」セクションを強調するHTML -->
+        <div class="bg-stone-50 border-none shadow-inner rounded-3xl p-10 my-12">
+         <!-- ここに「ふれる」の文章を配置 -->
+            <p class="font-medium text-stone-800 text-xl mb-6">今年のテーマは「ふれる」。</p>
+            <div class="space-y-4">
+                <p>人は、見えないものに不安を感じる一方で、触れることで想像しようとします。</p>
+                <p>手で触れる<br>情報に触れる<br>心の琴線に触れる<br>そして、完成品の向こう側にある物語に触れる。</p>
+                <p class="mt-6">One+ senseには正解はありません。<br>感じ方も、受け取り方も、人それぞれです。<br>答えは、いつも自分の中にあります。</p>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            <p class="text-lg font-medium text-stone-800">「1人が動けば、世界は変わる」</p>
+            <p>展示は会場に並ぶ作品だけで完成するものではありません。<br>
+            テーマを考え、企画を立て、香りをつくり、人と出会い、少しずつ積み重ねた時間があって、初めて展示になります。<br>
+            今年は、その展示ができるまでの過程も作品の一部として記録しています。</p>
+            <p class="font-medium text-stone-800 text-lg pt-4">小さな動きが、誰かの気づきにつながることを願って。</p>
+        </div>
+    </div>
+
+    <div class="bg-stone-100 rounded-3xl p-10 mt-20 text-center text-stone-700">
+        <h3 class="font-medium text-stone-800 text-2xl mb-10">B-tria Spicaについて</h3>
+        <div class="space-y-8 leading-relaxed">
+            <p>北海道美唄市を拠点に活動する、セルフブランディングによるクリエイティブプロジェクト。<br>
+            「香り」をきっかけに、地域資源や植物の可能性、<br>そして完成品の向こう側にある物語を表現し、伝える活動を行っています。</p>
+            
+            <p>現在は、香りの展示イベント「One+ sense」の企画・運営をはじめ、ワークショップの開催、オリジナルブレンド精油の開発、デザイン制作など、幅広く活動しています。</p>
+            
+            <div class="pt-8 border-t border-stone-200 space-y-6">
+                <p>プロジェクトを主宰する「中の人」は北海道美唄市出身、在住。<br>大学では数学教育・理科教育・科学教育を学ぶ。</p>
+                <p>元教員で「理系の知見を持つアロマのプロ」として、<br>香りを通じたワークショップ、体験づくり、展示活動を行っています。<br>
+                地域資源や植物の可能性を伝え、<br>「完成品の向こう側にある物語」にふれる機会をつくることを大切にしています。</p>
+            </div>
+            
+            <ul class="text-sm pt-6 space-y-2 text-stone-500">
+                <li>日本アロマ環境協会（AEAJ）認定アロマテラピーインストラクター</li>
+                <li>日本アロマ環境協会（AEAJ）認定アロマブレンドデザイナー</li>
+                <li>@aromaアロマ空間アドバイザー認定</li>
+                <li>一般社団法人和ハーブ協会認定 和ハーブ・ライフアドバイザー</li>
+                <li>JCAキャンドルクラフトコース修了、アーティストコース履修中</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+        <section id="overview" class="fade-section">
+            <h2 class="text-2xl font-medium mb-6 text-center">開催概要</h2>
+            <div class="bg-white rounded-2xl shadow-sm p-8 space-y-3">
+                <p>イベント名：One+ sense 2026「ふれる」</p>
+                <p>日程：2026年8月13日(木)～16日(日)</p>
+                <p>時間：10:00 – 17:00（最終日のみ16:00まで）</p>
+                <p>会場：安田侃彫刻美術館 アルテピアッツァ美唄 ストゥディオアルテ</p>
+                <p>入場料：無料（ワークショップのみ有料）</p>
+            </div>
+        </section>
+
+       <section id="special" class="fade-section">
+            <h2 class="text-2xl font-medium mb-6 text-center">特別企画「香りのつくり手にふれる日」</h2>
+            <p class="leading-relaxed text-stone-600 text-center mb-8">
+                One+ sense 5回目記念特別企画として、精油・和精油のつくり手に焦点を当て、製品の背景にある物語を直接届ける企画です。<br>
+                現在、出展希望者を募集しております。<br><br>
+                なお、パネル展示・ワークショップの出展者は、決まり次第、順次お知らせいたします。
+            </p>
+        </section>
+
+        <section id="recruit" class="fade-section">
+            <h2 class="text-2xl font-medium mb-6 text-center">特別企画出展者・募集要項</h2>
+            <details class="bg-white rounded-2xl shadow-sm p-6 mb-6">
+                <summary class="cursor-pointer font-medium text-center">▶ 募集要項の詳細を見る</summary>
+                <div class="mt-6 space-y-4">
+                    <img class="w-full rounded-xl" src="images/recruit-1.png" alt="募集要項1">
+                    <img class="w-full rounded-xl" src="images/recruit-2.png" alt="募集要項2">
+                    <img class="w-full rounded-xl" src="images/recruit-3.png" alt="募集要項3">
+                    <img class="w-full rounded-xl" src="images/recruit-4.png" alt="募集要項4">
+                </div>
+            </details>
+            <div class="flex flex-col md:flex-row justify-center gap-4 mt-8">
+                <a href="https://ws.formzu.net/fgen/S482600584/?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn3-10FBbWhzsBiLmkLppAJ1m8U5J6Dz3159_06BSKDZ1DCCIV-V8f39Oq9k8_aem_K3iCHzJOCnHSG_q3_HD6sQ" target="_blank" 
+                   class="bg-stone-800 text-white px-8 py-3 rounded-full hover:bg-black transition text-center shadow-lg hover:-translate-y-1 transition-all">
+                    出展に申し込む
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3nWFGUY6ylWaS84KbKDghuoX5gGHEDRRlbBxsvJGzOno5Jw/viewform?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnrOmxvRlFd62F9LWE62IdmKap6rnpZ3J2LZ3xRt_iX3aXatQGop5-duy5cgU_aem_LQvgwFjMOq2n66fYt3qwAg" target="_blank" 
+                   class="bg-white text-stone-800 border border-stone-300 px-8 py-3 rounded-full hover:bg-stone-50 transition text-center hover:-translate-y-1 transition-all">
+                    お問い合わせはこちら
+                </a>
+            </div>
+        </section>
+
+        <section id="past" class="fade-section">
+            <h2 class="text-2xl font-medium mb-8 text-center">過去4回の展示</h2>
+            <div class="bg-white rounded-2xl shadow-sm p-6">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-32 flex md:flex-col gap-2">
+                        <button type="button" class="gallery-tab active px-4 py-2 rounded-full text-sm" data-exhibit="1">2022</button>
+                        <button type="button" class="gallery-tab px-4 py-2 rounded-full text-sm" data-exhibit="2">2023</button>
+                        <button type="button" class="gallery-tab px-4 py-2 rounded-full text-sm" data-exhibit="3">2024</button>
+                        <button type="button" class="gallery-tab px-4 py-2 rounded-full text-sm" data-exhibit="4">2025</button>
+                    </div>
+                    <div class="flex-1">
+                      <!-- 2022は表示（そのまま） -->
+                        <div class="gallery-content">
+                            <img class="w-full h-64 object-cover rounded-lg mb-4" src="images/past-2022-main.jpg" alt="2022">
+                            <div class="grid grid-cols-4 gap-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2022-main.jpg" alt="2022-main">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2022-2.jpg" alt="2022-2">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2022-3.JPG" alt="2022-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2022-4.JPG" alt="2022-4">
+                            </div>
+                        </div>
+                        <!-- 2023以降に hidden を追加 -->
+                        <div class="gallery-content hidden">
+                            <img class="w-full h-64 object-cover rounded-lg mb-4" src="images/past-2023-main.jpg" alt="2023">
+                            <div class="grid grid-cols-4 gap-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2023-main.jpg" alt="2023-main">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2023-2.jpg" alt="2023-2">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2023-3.jpg" alt="2023-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2023-4.JPG" alt="2023-4">
+                            </div>
+                        </div>
+                        <div class="gallery-content hidden">
+                            <img class="w-full h-64 object-cover rounded-lg mb-4" src="images/past-2024-main.jpg" alt="2024">
+                            <div class="grid grid-cols-4 gap-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2024-main.jpg" alt="2024-main">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2024-2.jpg" alt="2024-2">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2024-3.JPG" alt="2024-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2024-4.JPG" alt="2024-4">
+                            </div>
+                        </div>
+                        <div class="gallery-content hidden">
+                            <img class="w-full h-64 object-cover rounded-lg mb-4" src="images/past-2025-main.jpg" alt="2025">
+                            <div class="grid grid-cols-4 gap-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2025-main.jpg" alt="2025-main">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2025-2.jpg" alt="2025-2">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2025-3.JPG" alt="2025-3">
+                                <img class="h-24 w-full object-cover rounded" src="images/past-2025-4.JPG" alt="2025-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="fade-section">
+            <h2 class="text-2xl font-medium mb-6 text-center">よくあるご質問</h2>
+            <div class="space-y-4">
+                <details class="bg-white rounded-xl shadow-sm p-5 cursor-pointer">
+                    <summary class="font-medium text-stone-800">▼ Q. 駐車場はありますか？</summary>
+                    <p class="mt-3 text-stone-600">展示にお越しの方は、カフェアルテ側(25台)の駐車場をご利用ください。<br>なお、アートスペース（旧体育館）側にも駐車場がございます。</p>
+                </details>
+                
+                <details class="bg-white rounded-xl shadow-sm p-5 cursor-pointer">
+                    <summary class="font-medium text-stone-800">▼ Q. ペットの同伴は可能ですか？</summary>
+                    <p class="mt-3 text-stone-600">施設の屋外エリアのみ同伴可能で、展示会場内は同伴不可です。屋外ではリードの着用をお願いいたします。</p>
+                </details>
+                
+                <details class="bg-white rounded-xl shadow-sm p-5 cursor-pointer">
+                    <summary class="font-medium text-stone-800">▼ Q. ワークショップ及び物販の支払い方法は？</summary>
+                    <p class="mt-3 text-stone-600">ワークショップは現金のみとなっております。一部の物販はPayPayのみご使用可能です。</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="access" class="max-w-3xl mx-auto px-6 py-20 fade-section">
+        <h2 class="text-2xl font-medium mb-8 text-center">アクセス</h2>
+        <div class="bg-white rounded-2xl shadow-sm p-4 md:p-8 text-center">
+            <div class="w-full h-64 md:h-80 mb-6 rounded-lg overflow-hidden border border-stone-200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8209.030541281843!2d141.90839632949283!3d43.32827101445945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b50b80cf9e711%3A0x73d14bd5b8d0196b!2z44Kr44OV44Kn44Ki44Or44OG!5e0!3m2!1sja!2sjp!4v1782524834949!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            
+            <div class="text-sm text-stone-600 space-y-3">
+                <p class="font-bold text-stone-800">〒072-0831 北海道美唄市落合町栄町</p>
+                <p>道央自動車道 美唄IC下車、右折後、道道美唄富良野線を1.7km（約5分）<br>
+                美唄駅から市民バス東線「アルテピアッツァ美唄」行き乗車。<br>
+                (東明通り経由32分、旭通り経由19分)<br>
+                ※展示会場の最寄りのバス停「東明橋」で下車ください。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sns" class="max-w-3xl mx-auto px-6 py-20 text-center fade-section">
+            <h2 class="text-2xl font-medium mb-10">SNS・関連リンク</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
+                    <p class="mb-4 text-sm text-stone-500 font-medium">展示ができるまでの日誌を公開中</p>
+                    <a href="https://www.instagram.com/b_tria_spica2022/" target="_blank" class="inline-block bg-pink-700 text-white px-8 py-3 rounded-full transition-all hover:bg-pink-800 hover:-translate-y-1 shadow-lg shadow-pink-200">Instagram を見る</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
+                    <p class="mb-4 text-sm text-stone-500 font-medium">最新情報・過去の活動はこちら</p>
+                    <a href="https://b-triaspica.my.canva.site/" target="_blank" class="inline-block bg-stone-500 text-white px-8 py-3 rounded-full transition-all hover:bg-stone-600 hover:-translate-y-1 shadow-lg">公式サイトへ</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-900 text-white/50 text-center py-10 mt-10">
+        <p class="text-sm">© 2026 B-tria Spica. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-section').forEach(s => observer.observe(s));
+
+        document.querySelectorAll('.gallery-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const exhibit = parseInt(tab.dataset.exhibit);
+                document.querySelectorAll('.gallery-content').forEach(g => g.classList.add('hidden'));
+                const contents = document.querySelectorAll('.gallery-content');
+                if (contents[exhibit - 1]) contents[exhibit - 1].classList.remove('hidden');
+                document.querySelectorAll('.gallery-tab').forEach(b => b.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+
+       // ギャラリー切替機能
+    document.querySelectorAll('.gallery-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            const exhibit = parseInt(tab.dataset.exhibit);
+            document.querySelectorAll('.gallery-content').forEach(g => g.classList.add('hidden'));
+            const contents = document.querySelectorAll('.gallery-content');
+            if (contents[exhibit - 1]) contents[exhibit - 1].classList.remove('hidden');
+            document.querySelectorAll('.gallery-tab').forEach(b => b.classList.remove('active'));
+            tab.classList.add('active');
+        });
+    });
+
+    // 小画像をクリックしたときの処理
+    document.querySelectorAll('.gallery-content .grid img').forEach(smallImg => {
+        smallImg.style.cursor = 'pointer';
+        smallImg.addEventListener('click', () => {
+            // その年（gallery-content）のメイン画像を取得
+            const mainImg = smallImg.closest('.gallery-content').querySelector('img:first-child');
+            
+            // 【変更点】入れ替えせず、メイン画像の src を小画像の src に書き換えるだけにする
+            mainImg.src = smallImg.src;
+            
+            // メイン画像へ少しスクロールして見やすくする（任意）
+            mainImg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    });
+
+    </script>
+</body>
+</html>
